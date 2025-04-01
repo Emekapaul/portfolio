@@ -1,36 +1,93 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Software Engineer Portfolio
+
+A modern, responsive portfolio website built with Next.js and Tailwind CSS. This portfolio showcases my work as a Software Engineer and provides information about my services and pricing.
+
+## Features
+
+- 🎨 Modern and responsive design
+- 🌙 Dark mode support
+- ⚡ Fast performance with Next.js
+- 🎭 Smooth animations with Framer Motion
+- 📱 Mobile-friendly navigation
+- 📝 Contact form
+- 💼 Project showcase
+- 🛠️ Skills and expertise section
+- 💰 Pricing plans
+
+## Pages
+
+- Home: Introduction and featured sections
+- About: Personal information and experience
+- Skills: Technical skills and expertise
+- Projects: Portfolio of work
+- Contact: Contact form and information
+- Hire Me: Services and pricing
+
+## Technologies Used
+
+- Next.js 14
+- React
+- Tailwind CSS
+- Framer Motion
+- Hero Icons
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Node.js 18.17 or later
+- npm or yarn
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Installation
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+1. Clone the repository:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+   ```bash
+   git clone https://github.com/yourusername/portfolio.git
+   ```
 
-## Learn More
+2. Navigate to the project directory:
 
-To learn more about Next.js, take a look at the following resources:
+   ```bash
+   cd portfolio
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. Install dependencies:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
 
-## Deploy on Vercel
+4. Start the development server:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+5. Open [http://localhost:3000](http://localhost:3000) in your browser to see the result.
+
+## Customization
+
+1. Update personal information in the respective pages
+2. Add your own projects to the Projects page
+3. Modify the skills and expertise in the Skills page
+4. Update pricing plans in the Hire Me page
+5. Add your own images to the `public` directory
+
+## Deployment
+
+The easiest way to deploy your portfolio is to use the [Vercel Platform](https://vercel.com/new).
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fyourusername%2Fportfolio)
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
