@@ -47,7 +47,7 @@ export default function RootLayout({ children }) {
   return (
     <html
       lang="en"
-      className={`scroll-smooth ${inter.variable} ${orbitron.variable} ${rajdhani.variable} ${spaceMono.variable} ${poppins.variable} ${montserrat.variable} ${pacifico.variable} ${playfair.variable}`}
+      className={`scroll-smooth scroll-pt-25 ${inter.variable} ${orbitron.variable} ${rajdhani.variable} ${spaceMono.variable} ${poppins.variable} ${montserrat.variable} ${pacifico.variable} ${playfair.variable}`}
     >
       <body className="bg-gray-50 text-gray-900 dark:bg-gray-900 dark:text-gray-100">
         <Navbar />
