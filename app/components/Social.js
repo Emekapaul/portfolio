@@ -1,21 +1,26 @@
-import { FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaXTwitter, FaEnvelope } from "react-icons/fa6";
 import Link from "next/link";
 
 const socials = [
   {
     name: "LinkedIn",
-    icon: <FaLinkedin size={20} />,
+    icon: <FaLinkedin size={24} />,
     url: "https://www.linkedin.com/in/paul-ugwuoke",
   },
   {
     name: "GitHub",
-    icon: <FaGithub size={20} />,
+    icon: <FaGithub size={24} />,
     url: "https://github.com/Emekapaul",
   },
   {
     name: "Twitter",
-    icon: <FaTwitter size={20} />,
+    icon: <FaXTwitter size={24} />,
     url: "https://twitter.com/Emekapaul302",
+  },
+  {
+    name: "Email",
+    icon: <FaEnvelope size={24} />,
+    url: "/contact",
   },
 ];
 
@@ -27,8 +32,9 @@ const Social = ({ containerStyles, iconStyles }) => {
           href={social.url}
           key={social.name}
           className={iconStyles}
-          target="_blank"
-          rel="noopener noreferrer"
+          {...(social.name === "Email"
+            ? {}
+            : { target: "_blank", rel: "noopener noreferrer" })}
         >
           {social.icon}
         </Link>
