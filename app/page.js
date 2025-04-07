@@ -82,7 +82,10 @@ export default function Home() {
               transition={{ duration: 1 }}
               className="flex-1 flex justify-center items-center order-1 md:order-none"
             >
-              <Photo />
+              <Photo
+                containerStyles="relative w-72 h-72 md:w-96 md:h-96 rounded-full shadow-xl overflow-visible flex items-center justify-center"
+                imageSize="(max-width: 767px) 288px, 384px"
+              />
             </motion.div>
           </div>
         </div>
