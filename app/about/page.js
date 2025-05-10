@@ -13,14 +13,14 @@ import {
   ChevronUp,
   Clock,
 } from "lucide-react";
-import Social from "../components/Social";
-import Photo from "../components/Photo";
-import SkillItem from "../components/SkillItem";
-import AnimatedBackground from "../components/AnimatedBackground";
-import SectionHeader from "../components/SectionHeader";
-import Card from "../components/Card";
+import Social from "../components/server/Social";
+import Photo from "../components/server/Photo";
+import SkillItem from "../components/client/SkillItem";
+import AnimatedBackground from "../components/client/AnimatedBackground";
+import SectionHeader from "../components/server/SectionHeader";
+import Card from "../components/server/Card";
 import { useState } from "react";
-import EducationCard from "../components/EducationCard";
+import EducationCard from "../components/client/EducationCard";
 
 const sideNavItems = [
   { title: "Introduction", href: "#introduction" },

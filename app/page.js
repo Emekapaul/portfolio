@@ -4,12 +4,12 @@ import { useEffect, useRef } from "react";
 import { ArrowDownTrayIcon } from "@heroicons/react/24/outline";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import Photo from "./components/Photo";
-import Social from "./components/Social";
-import Stats from "./components/Stats";
-import Services from "./components/Services";
-import SlideSkills from "./components/SlideSkills";
-import Testimonials from "./components/Testimonials";
+import Photo from "./components/server/Photo";
+import Social from "./components/server/Social";
+import Stats from "./components/client/Stats";
+import Services from "./components/client/Services";
+import SlideSkills from "./components/client/SlideSkills";
+import Testimonials from "./components/client/Testimonials";
 // Animation variants
 const fadeInUp = {
   initial: { opacity: 0, y: 20 },
@@ -110,9 +110,9 @@ export default function Home() {
                 </p>
               </div>
               <p className="text-xl text-gray-600 dark:text-gray-300 max-w-xl mx-auto md:mx-0">
-                I’m passionate about crafting beautiful and functional web
+                I'm passionate about crafting beautiful and functional web
                 experiences. I turn ideas into reality, I bring your ideas and
-                visions to life. Let’s build!
+                visions to life. Let's build!
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start mt-8">
                 <Link
