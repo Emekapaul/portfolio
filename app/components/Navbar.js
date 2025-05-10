@@ -2,14 +2,14 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import Image from "next/image";
+import Photo from "./Photo";
 import {
   Bars3Icon,
   XMarkIcon,
   SunIcon,
   MoonIcon,
 } from "@heroicons/react/24/outline";
-
+import emekaPaul from "@/public/assets/images/photo.jpg";
 const navLinks = [
   { name: "Home", href: "/" },
   { name: "About", href: "/about" },
@@ -47,16 +47,15 @@ export default function Navbar() {
     <header className="fixed inset-x-0 top-0 z-50 dark:bg-gray-900/80 bg-white/80 shadow-lg">
       <div className="container mx-auto flex justify-between items-center py-4 px-6">
         {/* Logo Section */}
-        <Link href="/" className="flex items-center">
-          <div className="relative w-10 h-10 mr-1">
-            <Image
-              src="/assets/images/photo.jpg"
-              alt="Logo"
-              fill
-              className="object-cover rounded-full"
-              sizes="40px"
-            />
-          </div>
+        <Link href="/" className="flex items-center gap-2">
+          <Photo
+            containerStyles="relative w-10 h-10 mr-1"
+            imageSize="40px"
+            src={emekaPaul}
+            r="190"
+            borderWidth="8"
+            alt="Logo"
+          />
           <h1 className="font-[Orbitron] text-2xl font-extrabold tracking-wide text-gray-900 dark:text-white">
             PaulNna
             <span className="text-gray-900 dark:text-white font-extrabold">
@@ -155,16 +154,15 @@ export default function Navbar() {
         >
           {/*Mobile Logo and Close Menu Button */}
           <div className="flex items-center justify-between px-2 sm:px-4 py-6">
-            <Link href="/" className="flex items-center">
-              <div className="relative w-10 h-10 mr-1">
-                <Image
-                  src="/assets/images/photo.jpg"
-                  alt="Logo"
-                  fill
-                  className="object-cover rounded-full"
-                  sizes="40px"
-                />
-              </div>
+            <Link href="/" className="flex items-center gap-2">
+              <Photo
+                containerStyles="relative w-10 h-10 mr-1"
+                imageSize="40px"
+                src={emekaPaul}
+                r="190"
+                borderWidth="8"
+                alt="Logo"
+              />
               <h1 className="font-[Orbitron] text-lg sm:text-2xl font-extrabold tracking-wide text-gray-900 dark:text-white">
                 PaulNna
                 <span className="text-gray-900 dark:text-white font-extrabold">
