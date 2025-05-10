@@ -8,6 +8,11 @@
   :root {
     --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
+
+    --background: #08131f;
+    --foreground: #e0e0e0;
+    --primary: #3b82f6;
+    --muted: #1f1f2e;
   }
 
   /* .dark {
@@ -36,4 +41,17 @@
   .heading-3 {
     @apply text-2xl font-bold tracking-tight sm:text-3xl;
   }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 40s linear infinite;
 }
