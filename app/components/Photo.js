@@ -1,8 +1,9 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
-import photo from "@/public/assets/images/emekaPaul.jpg";
+import defaultPhoto from "@/public/assets/images/emekaPaul.jpg";
 
 const Photo = ({
+  src = defaultPhoto,
   containerStyles = "relative w-72 h-72 md:w-96 md:h-96 rounded-full shadow-xl overflow-visible flex items-center justify-center",
   imageStyles = "object-cover rounded-full",
   imageSize = "(max-width: 767px) 288px, 384px",
@@ -13,12 +14,15 @@ const Photo = ({
   showBorder = true,
   borderColor = "blue",
   borderWidth = "4",
+  cx = "275",
+  cy = "275",
+  r = "270",
 }) => {
   return (
     <div className={containerStyles}>
       {/* Profile Image */}
       <Image
-        src={photo}
+        src={src}
         alt={alt}
         quality={quality}
         priority={priority}
@@ -36,9 +40,9 @@ const Photo = ({
           xmlns="http://www.w3.org/2000/svg"
         >
           <motion.circle
-            cx="275"
-            cy="275"
-            r="270"
+            cx={cx}
+            cy={cy}
+            r={r}
             stroke={borderColor}
             strokeWidth={borderWidth}
             strokeLinecap="round"
