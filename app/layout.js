@@ -9,6 +9,7 @@ import {
   Playfair_Display,
 } from "next/font/google";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 import "./globals.css";
 
 // Initialize all fonts
@@ -52,6 +53,7 @@ export default function RootLayout({ children }) {
       <body className="bg-gray-50 text-gray-900 dark:bg-gray-900 dark:text-gray-100">
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );

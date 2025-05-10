@@ -79,9 +79,10 @@ export default function HireMe() {
       <section className="section-padding pt-32">
         <div className="container">
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
+            initial={{ opacity: 0, scale: 0.5 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 1, ease: "easeOut" }}
+            viewport={{ once: true }}
             className="max-w-3xl mx-auto text-center"
           >
             <h1 className="heading-1 mb-6">Hire Me</h1>
@@ -103,9 +104,9 @@ export default function HireMe() {
       <section className="section-padding bg-gray-50 dark:bg-gray-800">
         <div className="container">
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
+            initial={{ opacity: 0, scale: 0.5 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 1, ease: "easeOut" }}
             viewport={{ once: true }}
             className="text-center mb-12"
           >
@@ -119,9 +120,13 @@ export default function HireMe() {
             {services.map((service, index) => (
               <motion.div
                 key={service.title}
-                initial={{ opacity: 0, y: 20 }}
+                initial={{ opacity: 0, y: 100 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: index * 0.2 }}
+                transition={{
+                  duration: 1,
+                  delay: index * 0.2,
+                  ease: "easeOut",
+                }}
                 viewport={{ once: true }}
                 className="bg-white dark:bg-gray-900 p-6 rounded-xl shadow-lg"
               >
@@ -162,9 +167,9 @@ export default function HireMe() {
       <section className="section-padding">
         <div className="container">
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
+            initial={{ opacity: 0, scale: 0.5 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 1, ease: "easeOut" }}
             viewport={{ once: true }}
             className="text-center mb-12"
           >
@@ -177,9 +182,13 @@ export default function HireMe() {
             {pricingPlans.map((plan, index) => (
               <motion.div
                 key={plan.name}
-                initial={{ opacity: 0, y: 20 }}
+                initial={{ opacity: 0, y: 100 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: index * 0.2 }}
+                transition={{
+                  duration: 1,
+                  delay: index * 0.2,
+                  ease: "easeOut",
+                }}
                 viewport={{ once: true }}
                 className={`bg-white dark:bg-gray-900 p-8 rounded-xl shadow-lg relative ${
                   plan.popular ? "ring-2 ring-blue-600" : ""
