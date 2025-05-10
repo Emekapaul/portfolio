@@ -1,6 +1,5 @@
 "use client";
 
-import { useEffect, useRef } from "react";
 import { ArrowDownTrayIcon } from "@heroicons/react/24/outline";
 import { motion } from "framer-motion";
 import Link from "next/link";
@@ -10,71 +9,9 @@ import Stats from "./components/client/Stats";
 import Services from "./components/client/Services";
 import SlideSkills from "./components/client/SlideSkills";
 import Testimonials from "./components/client/Testimonials";
-// Animation variants
-const fadeInUp = {
-  initial: { opacity: 0, y: 20 },
-  animate: { opacity: 1, y: 0 },
-  transition: { duration: 0.8 },
-};
-
-const fadeInLeft = {
-  initial: { opacity: 0, x: -20 },
-  animate: { opacity: 1, x: 0 },
-  transition: { duration: 0.8 },
-};
-
-const fadeInRight = {
-  initial: { opacity: 0, x: 20 },
-  animate: { opacity: 1, x: 0 },
-  transition: { duration: 0.8 },
-};
+import AnimatedText from "./components/client/AnimatedText";
 
 export default function Home() {
-  // Ref for the animated text
-  const textRef = useRef(null);
-
-  // Text animation effect
-  useEffect(() => {
-    const roles = [
-      "Software Engineer",
-      "Backend Developer",
-      "Frontend Developer",
-    ];
-    let currentIndex = 0;
-    let currentText = "";
-    let isDeleting = false;
-
-    const typeEffect = () => {
-      const currentRole = roles[currentIndex];
-
-      if (isDeleting) {
-        currentText = currentRole.substring(0, currentText.length - 1);
-      } else {
-        currentText = currentRole.substring(0, currentText.length + 1);
-      }
-
-      if (textRef.current) {
-        textRef.current.textContent = currentText;
-      }
-
-      let typeSpeed = isDeleting ? 50 : 100;
-
-      if (!isDeleting && currentText === currentRole) {
-        typeSpeed = 2000; // Pause at the end
-        isDeleting = true;
-      } else if (isDeleting && currentText === "") {
-        isDeleting = false;
-        currentIndex = (currentIndex + 1) % roles.length;
-        typeSpeed = 500; // Pause before typing next
-      }
-
-      setTimeout(typeEffect, typeSpeed);
-    };
-
-    const timeout = setTimeout(typeEffect, 1000);
-    return () => clearTimeout(timeout);
-  }, []);
-
   return (
     <main className="min-h-screen">
       {/* Hero Section */}
@@ -95,20 +32,7 @@ export default function Home() {
                   Paul Nnaemeka
                 </span>
               </h1>
-              <div className="flex items-center justify-start space-x-4 mb-4">
-                <p className="text-2xl sm:text-3xl lg:text-4xl font-bold">
-                  I'm a{" "}
-                  <span
-                    ref={textRef}
-                    className="text-blue-600 dark:text-blue-400"
-                  >
-                    Software Engineer
-                  </span>
-                  <span className="text-blue-600 dark:text-blue-400 animate-pulse">
-                    |
-                  </span>
-                </p>
-              </div>
+              <AnimatedText />
               <p className="text-xl text-gray-600 dark:text-gray-300 max-w-xl mx-auto md:mx-0">
                 I'm passionate about crafting beautiful and functional web
                 experiences. I turn ideas into reality, I bring your ideas and
