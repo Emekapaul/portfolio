@@ -41,7 +41,11 @@ const playfair = Playfair_Display({
   subsets: ["latin"],
 });
 
+// Get the base URL based on environment
+const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
+
 export const metadata = {
+  metadataBase: new URL(baseUrl),
   title: {
     default: "Paul Nnaemeka - Software Engineer",
     template: "%s | Paul Nnaemeka",
@@ -65,7 +69,7 @@ export const metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://your-domain.com",
+    url: baseUrl,
     title: "Paul Nnaemeka - Software Engineer",
     description: "Full-stack software engineer specializing in web development",
     siteName: "Paul Nnaemeka Portfolio",
@@ -109,9 +113,7 @@ export default function RootLayout({ children }) {
         <div className="min-h-screen flex flex-col">
           <Navbar />
           <main className="flex-grow">
-            <ErrorBoundary>
-              <Suspense fallback={<Loading />}>{children}</Suspense>
-            </ErrorBoundary>
+            <Suspense fallback={<Loading />}>{children}</Suspense>
           </main>
           <Footer />
         </div>
