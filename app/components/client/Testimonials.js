@@ -102,7 +102,7 @@ const Testimonials = ({ autoPlayDuration = 7000 }) => {
                   </div>
                   <blockquote className="text-center">
                     <p className="text-lg text-gray-700 dark:text-gray-200 italic mb-6">
-                      "{testimonials[currentIndex].content}"
+                      &quot;{testimonials[currentIndex].content}&quot;
                     </p>
                     <div className="mt-4">
                       <p className="text-lg font-semibold text-blue-600 dark:text-blue-400">
