@@ -114,7 +114,7 @@ const Services = () => {
         >
           {servicesData.map((section) => (
             <motion.div key={section.id} variants={itemVariants}>
-              <Tilt className="p-6 bg-gradient-to-br from-white to-gray-200 dark:from-gray-800 dark:to-gray-900 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-[1.02] border border-gray-300 dark:border-gray-700">
+              <Tilt className="h-full p-6 bg-gradient-to-br from-white to-gray-200 dark:from-gray-800 dark:to-gray-900 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-[1.02] border border-gray-300 dark:border-gray-700">
                 <section.icon className="text-4xl mb-3 text-blue-600 dark:text-blue-400" />
                 <h3 className="text-xl font-bold mb-2 text-gray-900 dark:text-white">
                   {section.title}
