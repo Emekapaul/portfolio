@@ -72,8 +72,8 @@ const Testimonials = ({ autoPlayDuration = 7000 }) => {
             What Clients Say
           </h2>
           <p className="mt-4 text-lg text-gray-600 dark:text-gray-300">
-            Don't just take my word for it - hear from my satisfied clients. I
-            go lie for you!
+            Don&apos;t just take my word for it - hear from my satisfied
+            clients. I go lie for you!
           </p>
         </motion.div>
 

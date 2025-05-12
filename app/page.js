@@ -27,16 +27,16 @@ export default function Home() {
               className="flex-1 text-center md:text-left order-2 md:order-none"
             >
               <h1 className="heading-1 mb-4 text-left">
-                Hi, I'm{" "}
+                Hi, I&apos;m{" "}
                 <span className="text-blue-600 dark:text-blue-400">
                   Paul Nnaemeka
                 </span>
               </h1>
               <AnimatedText />
               <p className="text-xl text-gray-600 dark:text-gray-300 max-w-xl mx-auto md:mx-0">
-                I'm passionate about crafting beautiful and functional web
+                I&apos;m passionate about crafting beautiful and functional web
                 experiences. I turn ideas into reality, I bring your ideas and
-                visions to life. Let's build!
+                visions to life. Let&apos;s build!
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start mt-8">
                 <Link

@@ -85,7 +85,7 @@ export default function Projects() {
               My Projects
             </h1>
             <p className="text-xl text-gray-600 dark:text-gray-300">
-              Here are some of the projects I've worked on. Each project
+              Here are some of the projects I&apos;ve worked on. Each project
               represents a unique challenge and an opportunity to create
               something meaningful.
             </p>

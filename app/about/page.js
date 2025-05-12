@@ -274,11 +274,11 @@ export default function About() {
                       iconStyles="text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-gray-200 border border-gray-400 dark:border-gray-700 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 p-2 transition-colors duration-300"
                     />
                     <p className="text-gray-600 dark:text-gray-300 mb-6 px-6 md:pr-6 md:pl-0">
-                      I'm a passionate Software Engineer with a keen eye for
-                      detail and a love for creating beautiful, functional web
-                      applications. With years of experience in the industry,
-                      I've developed a strong foundation in both front-end and
-                      back-end development.
+                      I&apos;m a passionate Software Engineer with a keen eye
+                      for detail and a love for creating beautiful, functional
+                      web applications. With years of experience in the
+                      industry, I&apos;ve developed a strong foundation in both
+                      front-end and back-end development.
                     </p>
                   </motion.div>
                 </section>

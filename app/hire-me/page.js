@@ -87,8 +87,8 @@ export default function HireMe() {
           >
             <h1 className="heading-1 mb-6">Hire Me</h1>
             <p className="text-xl text-gray-600 dark:text-gray-300 mb-8">
-              Let's work together to bring your ideas to life. I offer a range
-              of services to help you achieve your goals.
+              Let&apos;s work together to bring your ideas to life. I offer a
+              range of services to help you achieve your goals.
             </p>
             <Link
               href="/contact"

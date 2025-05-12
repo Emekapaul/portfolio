@@ -47,7 +47,7 @@ export default function AnimatedText() {
   return (
     <div className="flex items-center justify-start space-x-4 mb-4">
       <p className="text-2xl sm:text-3xl lg:text-4xl font-bold">
-        I'm a{" "}
+        I&apos;m a{" "}
         <span ref={textRef} className="text-blue-600 dark:text-blue-400">
           Software Engineer
         </span>

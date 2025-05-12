@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const skills = {
   frontend: [
@@ -136,8 +137,8 @@ export default function Skills() {
               Skills & Expertise
             </h1>
             <p className="text-xl text-gray-600 dark:text-gray-300">
-              I've developed a comprehensive skill set through years of
-              experience in software development. Here's a breakdown of my
+              I&apos;ve developed a comprehensive skill set through years of
+              experience in software development. Here&apos;s a breakdown of my
               technical expertise.
             </p>
           </motion.div>
@@ -164,9 +165,11 @@ export default function Skills() {
                   <div key={skill.name}>
                     <div className="flex justify-between mb-1">
                       <div className="flex items-center gap-4">
-                        <img
+                        <Image
                           src={skill.icon}
                           alt={skill.name}
+                          width={24}
+                          height={24}
                           className="w-6 h-6"
                         />
                         <span className="text-gray-700 dark:text-gray-300">
@@ -206,9 +209,11 @@ export default function Skills() {
                   <div key={skill.name}>
                     <div className="flex justify-between mb-1">
                       <div className="flex items-center gap-4">
-                        <img
+                        <Image
                           src={skill.icon}
                           alt={skill.name}
+                          width={24}
+                          height={24}
                           className="w-6 h-6"
                         />
                         <span className="text-gray-700 dark:text-gray-300">
@@ -248,9 +253,11 @@ export default function Skills() {
                   <div key={skill.name}>
                     <div className="flex justify-between mb-1">
                       <div className="flex items-center gap-4">
-                        <img
+                        <Image
                           src={skill.icon}
                           alt={skill.name}
+                          width={24}
+                          height={24}
                           className="w-6 h-6"
                         />
                         <span className="text-gray-700 dark:text-gray-300">
@@ -290,9 +297,11 @@ export default function Skills() {
                   <div key={skill.name}>
                     <div className="flex justify-between mb-1">
                       <div className="flex items-center gap-4">
-                        <img
+                        <Image
                           src={skill.icon}
                           alt={skill.name}
+                          width={24}
+                          height={24}
                           className="w-6 h-6"
                         />
                         <span className="text-gray-700 dark:text-gray-300">
