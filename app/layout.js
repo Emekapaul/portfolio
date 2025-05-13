@@ -51,7 +51,7 @@ export const metadata = {
     template: "%s | Paul Nnaemeka",
   },
   description:
-    "Full-stack software engineer specializing in web development, with expertise in React, Node.js, and modern web technologies.",
+    "Full-stack software engineer specializing in frontend & backend development. I build scalable, secure, and user-friendly web applications.",
   keywords: [
     "software engineer",
     "web developer",
@@ -63,15 +63,27 @@ export const metadata = {
   authors: [{ name: "Paul Nnaemeka" }],
   creator: "Paul Nnaemeka",
   icons: {
-    icon: [{ url: "/assets/images/photo.jpg", type: "image/jpeg" }],
-    apple: [{ url: "/assets/images/photo.jpg", type: "image/jpeg" }],
+    icon: [
+      { url: "/favicon/favicon.ico", sizes: "any" },
+      { url: "/favicon/icon.png", type: "image/png", sizes: "32x32" },
+    ],
+    apple: [
+      {
+        url: "/favicon/apple-touch-icon.png",
+        sizes: "180x180",
+        type: "image/png",
+      },
+    ],
+    shortcut: ["/favicon/favicon.ico"],
   },
+  manifest: "/favicon/site.webmanifest",
   openGraph: {
     type: "website",
     locale: "en_US",
     url: baseUrl,
     title: "Paul Nnaemeka - Software Engineer",
-    description: "Full-stack software engineer specializing in web development",
+    description:
+      "Full-stack software engineer. I build scalable, secure, and user-friendly web applications.",
     siteName: "Paul Nnaemeka Portfolio",
     images: [
       {
@@ -85,7 +97,8 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Paul Nnaemeka - Software Engineer",
-    description: "Full-stack software engineer specializing in web development",
+    description:
+      "Full-stack software engineer. I build scalable, secure, and user-friendly web applications.",
     creator: "@Emekapaul302",
     images: ["/assets/images/photo.jpg"],
   },

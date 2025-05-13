@@ -22,6 +22,7 @@
     "react-icons": "^5.5.0",
     "react-intersection-observer": "^9.16.0",
     "react-parallax-tilt": "^1.7.288",
+    "sharp": "^0.33.5",
     "tailwindcss": "^4.0.15"
   },
   "devDependencies": {
