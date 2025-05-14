@@ -48,7 +48,7 @@ export default function Home() {
                 <a
                   href="/assets/PaulNna_Software-Engineer.pdf"
                   download
-                  className="px-6 py-3 border border-gray-300 dark:border-gray-700 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors duration-300 flex items-center justify-center gap-2"
+                  className="px-6 py-3 border border-gray-500 dark:border-gray-700 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors duration-300 flex items-center justify-center gap-2"
                 >
                   Download CV
                   <ArrowDownTrayIcon className="w-5 h-5" />
