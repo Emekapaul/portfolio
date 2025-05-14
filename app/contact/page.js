@@ -9,9 +9,9 @@ import {
   FaPhone,
   FaLocationDot,
 } from "react-icons/fa6";
-
 import Link from "next/link";
 import { useState } from "react";
+import { toast } from "react-toastify";
 
 export default function Contact() {
   const [error, setError] = useState(null);
@@ -45,6 +45,15 @@ export default function Contact() {
         throw new Error("Failed to send message");
       }
 
+      toast.success("Message sent successfully! I'll get back to you soon.", {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+      });
+
       setFormData({
         fullName: "",
         email: "",
@@ -64,6 +73,7 @@ export default function Contact() {
       ...formData,
       [e.target.name]: e.target.value,
     });
+    if (error) setError(null);
   };
 
   return (
