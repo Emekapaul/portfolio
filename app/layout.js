@@ -14,6 +14,8 @@ import ErrorBoundary from "./components/client/ErrorBoundary";
 import Loading from "./components/client/Loading";
 import "./globals.css";
 import { Suspense } from "react";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 // Initialize all fonts
 const inter = Inter({ subsets: ["latin"] });
@@ -130,6 +132,18 @@ export default function RootLayout({ children }) {
           </main>
           <Footer />
         </div>
+        <ToastContainer
+          position="top-right"
+          autoClose={5000}
+          hideProgressBar={false}
+          newestOnTop
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+          theme="light"
+        />
       </body>
     </html>
   );
