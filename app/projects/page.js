@@ -189,22 +189,27 @@ export default function Projects() {
                     </div>
 
                     {/* View Details Link */}
-                    <a
-                      href={project.liveUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-blue-600 dark:text-blue-300 font-medium flex items-center gap-1 hover:gap-2 transition-all group"
-                    >
-                      {isProjectDeployed(project) && (
-                        <>
+                    <div className="mt-auto pt-4">
+                      {isProjectDeployed(project) ? (
+                        <a
+                          href={project.liveUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-600 text-white hover:bg-blue-700 transition-all duration-300 group"
+                        >
                           View Website
                           <FaArrowRight
                             size={16}
-                            className="group-hover:translate-x-1 transition-transform"
+                            className="group-hover:translate-x-2 transition-transform duration-300"
                           />
-                        </>
+                        </a>
+                      ) : (
+                        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gray-200 dark:bg-gray-700 text-gray-600 dark:text-gray-300">
+                          <span>In Development</span>
+                          <span className="animate-pulse">•</span>
+                        </div>
                       )}
-                    </a>
+                    </div>
                   </div>
                 </div>
               </motion.div>
