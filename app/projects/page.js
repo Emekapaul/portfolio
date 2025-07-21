@@ -10,10 +10,21 @@ import { FaExternalLinkAlt, FaGithub, FaArrowRight } from "react-icons/fa";
 import homeShare from "@/public/assets/images/homeShare.png";
 import scheduly from "@/public/assets/images/scheduly.png";
 import callOfDuty from "@/public/assets/images/callOfDuty.jpg";
+import osoTheStudio from "@/public/assets/images/osoTheStudio.png";
 
 const projects = [
   {
     id: 0,
+    title: "OsoTheStudio",
+    description:
+      "OsoTheStudio is a portfolio website designed to showcase the work of a creative studio. It features a modern design, smooth animations, and a user-friendly interface that highlights the studio's projects and services.",
+    image: osoTheStudio,
+    technologies: ["Next.js", "Tailwind CSS", "Framer Motion"],
+    liveUrl: "https://stirring-liger-457c59.netlify.app/",
+    githubUrl: "",
+  },
+  {
+    id: 1,
     title: "HomeShare",
     description:
       "Developed a waitlist platform for HomeShare, a fractional real estate investment marketplace, enabling early users to sign up, engage with key features, and stay informed ahead of the main product launch.",
@@ -32,7 +43,7 @@ const projects = [
     githubUrl: "https://github.com/Emekapaul/HomeShare",
   },
   {
-    id: 1,
+    id: 2,
     title: "Scheduly",
     description:
       "Scheduly is a modern event scheduling application that helps users manage their events, meetings, and appointments efficiently. Built with a React frontend and Node.js backend, it provides a seamless experience for creating, managing, and organizing events",
@@ -51,7 +62,7 @@ const projects = [
     githubUrl: "https://github.com/Emekapaul/scheduly",
   },
   {
-    id: 2,
+    id: 3,
     title: "GameVault",
     description:
       "GameVault is a web app that lets users explore and download their favorite games from a central database. It features a secure login system, smooth animations, and a clean, responsive interface designed to deliver a seamless browsing and downloading experience.",
