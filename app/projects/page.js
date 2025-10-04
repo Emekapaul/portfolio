@@ -11,6 +11,7 @@ import homeShare from "@/public/assets/images/homeShare.png";
 import scheduly from "@/public/assets/images/scheduly.png";
 import callOfDuty from "@/public/assets/images/callOfDuty.jpg";
 import osoTheStudio from "@/public/assets/images/osoTheStudio.png";
+import rubanX from "@/public/assets/images/rubanX.png";
 
 const projects = [
   {
@@ -21,7 +22,7 @@ const projects = [
     image: osoTheStudio,
     technologies: ["Next.js", "Tailwind CSS", "Framer Motion"],
     liveUrl: "https://stirring-liger-457c59.netlify.app/",
-    githubUrl: "",
+    githubUrl: "https://github.com/Emekapaul/oso-the-studio",
   },
   {
     id: 1,
@@ -44,6 +45,22 @@ const projects = [
   },
   {
     id: 2,
+    title: "Ruban-X",
+    description:
+      "Collaborated with Ruban-x to develop scalable tech solutions for real-world urban challenges",
+    image: rubanX,
+    technologies: [
+      "React",
+      "Tailwind CSS",
+      "Framer Motion",
+      "Node.js",
+      "MongoDB",
+    ],
+    liveUrl: "https://rubanx.vercel.app/",
+    githubUrl: "https://github.com/JesseGreat/rubanx_website",
+  },
+  {
+    id: 3,
     title: "Scheduly",
     description:
       "Scheduly is a modern event scheduling application that helps users manage their events, meetings, and appointments efficiently. Built with a React frontend and Node.js backend, it provides a seamless experience for creating, managing, and organizing events",
@@ -62,7 +79,7 @@ const projects = [
     githubUrl: "https://github.com/Emekapaul/scheduly",
   },
   {
-    id: 3,
+    id: 4,
     title: "GameVault",
     description:
       "GameVault is a web app that lets users explore and download their favorite games from a central database. It features a secure login system, smooth animations, and a clean, responsive interface designed to deliver a seamless browsing and downloading experience.",
