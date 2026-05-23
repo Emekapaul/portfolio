@@ -11,21 +11,89 @@ import homeShare from "@/public/assets/images/homeShare.png";
 import scheduly from "@/public/assets/images/scheduly.png";
 import callOfDuty from "@/public/assets/images/callOfDuty.jpg";
 import osoTheStudio from "@/public/assets/images/osoTheStudio.png";
-import rubanX from "@/public/assets/images/rubanX.png";
+import zypaTech from "@/public/assets/images/zypaTech.png";
+import gleamDigitalTechnologies from "@/public/assets/images/gleamDigitalTechnologies.png";
+import cre8tiverse from "@/public/assets/images/cre8tiverse.png";
+import whoGoFixAm from "@/public/assets/images/whoGoFixAm.png";
 
 const projects = [
   {
     id: 0,
+    title: "Gleam Digital Technologies",
+    description:
+      "Gleam Digital Technologies is a modern technology consultancy website built to showcase scalable digital solutions, cloud infrastructure services, cybersecurity, DevOps practices, and software engineering expertise. The platform features a clean responsive design, modern UI animations, and service-focused architecture tailored for startups and enterprise clients.",
+    image: gleamDigitalTechnologies,
+    technologies: [
+      "Next.js",
+      "React",
+      "Tailwind CSS",
+      "Framer Motion",
+      "TypeScript",
+    ],
+    liveUrl: "https://www.gleamdigitaltechnologies.com/",
+    githubUrl: "https://github.com/GleamDT/gleam-digital-technologies",
+  },
+  {
+    id: 1,
+    title: "ZYPA Tech",
+    description:
+      "ZYPA Tech is a smart-city and urban innovation platform focused on solving real-world city challenges through scalable digital solutions, transportation technology, housing accessibility tools, and urban resource platforms. The website features a modern responsive interface, service-oriented architecture, and interactive user experience tailored toward sustainable urban development and digital transformation.",
+    image: zypaTech,
+    technologies: [
+      "React",
+      "Tailwind CSS",
+      "Framer Motion",
+      "Node.js",
+      "MongoDB",
+    ],
+    liveUrl: "https://www.zypatech.online/",
+    githubUrl: "https://github.com/JesseGreat/rubanx_website",
+  },
+  {
+    id: 2,
+    title: "WhoGoFixAm",
+    description:
+      "WhoGoFixAm is a vocational services and artisan marketplace platform that connects customers with trusted skilled workers such as plumbers, electricians, mechanics, tailors, and technicians. The platform also enables users to learn vocational skills online or discover nearby workshops, combining local service discovery with digital skill empowerment through a mobile-friendly and culturally localized experience.",
+    image: whoGoFixAm,
+    technologies: [
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "Firebase",
+      "Firestore",
+      "React Router",
+    ],
+    liveUrl: "https://whogofixam.online/",
+    githubUrl: "https://github.com/JasperZeroes/WhoGoFixAm",
+  },
+  {
+    id: 3,
+    title: "Cre8tiverse",
+    description:
+      "Cre8tiverse is a creative digital agency and EdTech platform focused on empowering brands, creators, and learners through multimedia solutions, digital marketing, creative training, and content production. The platform features a modern responsive interface, service-driven architecture, educational content integration, and a strong visual identity tailored for innovation, creativity, and digital transformation.",
+    image: cre8tiverse,
+    technologies: [
+      "Next.js",
+      "React",
+      "Tailwind CSS",
+      "Framer Motion",
+      "TypeScript",
+    ],
+    liveUrl: "https://www.cre8tiverse.online/",
+    githubUrl: "https://github.com/samdcre8tive/cre8tiverse",
+  },
+  {
+    id: 4,
     title: "OsoTheStudio",
     description:
       "OsoTheStudio is a portfolio website designed to showcase the work of a creative studio. It features a modern design, smooth animations, and a user-friendly interface that highlights the studio's projects and services.",
     image: osoTheStudio,
     technologies: ["Next.js", "Tailwind CSS", "Framer Motion"],
-    liveUrl: "https://stirring-liger-457c59.netlify.app/",
+    liveUrl: "https://osothestudio.vercel.app/",
     githubUrl: "https://github.com/Emekapaul/oso-the-studio",
   },
   {
-    id: 1,
+    id: 5,
     title: "HomeShare",
     description:
       "Developed a waitlist platform for HomeShare, a fractional real estate investment marketplace, enabling early users to sign up, engage with key features, and stay informed ahead of the main product launch.",
@@ -37,30 +105,14 @@ const projects = [
       "Node.js",
       "express",
       "MongoDB",
-      "JWT Aut",
+      "JWT Authentication",
       "Render",
     ],
     liveUrl: "https://homeshare-tn3c.onrender.com/",
     githubUrl: "https://github.com/Emekapaul/HomeShare",
   },
   {
-    id: 2,
-    title: "Ruban-X",
-    description:
-      "Collaborated with Ruban-x to develop scalable tech solutions for real-world urban challenges",
-    image: rubanX,
-    technologies: [
-      "React",
-      "Tailwind CSS",
-      "Framer Motion",
-      "Node.js",
-      "MongoDB",
-    ],
-    liveUrl: "https://rubanx.vercel.app/",
-    githubUrl: "https://github.com/JesseGreat/rubanx_website",
-  },
-  {
-    id: 3,
+    id: 6,
     title: "Scheduly",
     description:
       "Scheduly is a modern event scheduling application that helps users manage their events, meetings, and appointments efficiently. Built with a React frontend and Node.js backend, it provides a seamless experience for creating, managing, and organizing events",
@@ -79,7 +131,7 @@ const projects = [
     githubUrl: "https://github.com/Emekapaul/scheduly",
   },
   {
-    id: 4,
+    id: 7,
     title: "GameVault",
     description:
       "GameVault is a web app that lets users explore and download their favorite games from a central database. It features a secure login system, smooth animations, and a clean, responsive interface designed to deliver a seamless browsing and downloading experience.",
